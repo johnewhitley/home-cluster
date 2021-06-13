@@ -6,13 +6,13 @@ metadata:
 spec:
   acme:
     server: https://acme-staging-v02.api.letsencrypt.org/directory
-    email: "${SECRET_CLOUDFLARE_EMAIL}"
+    email: "johnewhitley@gmail.com"
     privateKeySecretRef:
       name: letsencrypt-staging
     solvers:
     - dns01:
         cloudflare:
-          email: "${SECRET_CLOUDFLARE_EMAIL}"
+          email: "johnewhitley@gmail.com"
           apiTokenSecretRef:
             name: cloudflare-token-secret
             key: cloudflare-token
